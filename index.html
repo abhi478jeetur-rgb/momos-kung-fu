@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Momo’s Kung Fu · a 60-second 3D short rendered live in your browser</title>
+<meta name="description" content="A panda who sells dumplings dreams of kung fu. A 60-second animated short, built entirely in code and rendered in real time in your browser with Three.js." />
+<meta name="theme-color" content="#1a0f0c" />
+<meta property="og:type" content="video.other" />
+<meta property="og:title" content="Momo’s Kung Fu" />
+<meta property="og:description" content="A 60-second 3D short about a dumpling-selling panda, built entirely in code and rendered live in your browser." />
+<meta property="og:url" content="https://abhi478jeetur-rgb.github.io/momos-kung-fu/" />
+<meta property="og:image" content="https://abhi478jeetur-rgb.github.io/momos-kung-fu/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Momo the panda balancing a stack of dumplings on his head in front of a red temple, with the title Momo’s Kung Fu" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Momo’s Kung Fu" />
+<meta name="twitter:description" content="A 60-second 3D short, built entirely in code and rendered live in your browser." />
+<meta name="twitter:image" content="https://abhi478jeetur-rgb.github.io/momos-kung-fu/og-image.jpg" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#">🥟 Momo’s Kung Fu</a>
+  <a class="gh" href="https://github.com/abhi478jeetur-rgb/momos-kung-fu">Source on GitHub</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="intro">
+      <p class="kicker">A 60-second animated short</p>
+      <h1>Momo’s<br/>Kung Fu</h1>
+      <p class="lede">Momo sells dumplings at the temple gate, but his heart belongs to kung fu. One clumsy flying kick, six airborne momos and one wise ox later, a legend begins.</p>
+      <p class="note">Nothing here is a video file. Every frame is rendered live by your graphics card, from geometry built in code.</p>
+      <ul class="keys">
+        <li><kbd>Space</kbd> play / pause</li>
+        <li><kbd>←</kbd><kbd>→</kbd> 5 seconds</li>
+        <li><kbd>F</kbd> fullscreen</li>
+        <li><kbd>C</kbd> captions</li>
+      </ul>
+    </div>
+
+    <div class="player">
+      <div id="stage" class="stage">
+        <canvas id="film" aria-label="Momo’s Kung Fu, real-time 3D animation"></canvas>
+        <div id="caption" class="caption" aria-live="polite"></div>
+        <div id="loading" class="loading">
+          <div class="spinner">🥟</div>
+          <p>Steaming the dumplings… <span id="loadpct">0%</span></p>
+          <div class="track"><div id="loadbar"></div></div>
+        </div>
+        <button id="poster" class="poster" aria-label="Play the film">
+          <span class="big"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span id="poster-label">Play the film</span>
+          <small>60 seconds · sound on</small>
+        </button>
+      </div>
+
+      <div class="controls">
+        <div class="scrubwrap">
+          <div id="ticks" class="ticks"></div>
+          <input id="scrub" type="range" min="0" max="1000" value="0" aria-label="Seek" />
+        </div>
+        <div class="row">
+          <button id="btn-play" class="ib" aria-label="Play"></button>
+          <button id="btn-restart" class="ib" aria-label="Restart"><svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7a6 6 0 1 1-6 6H4a8 8 0 1 0 8-8z"/></svg></button>
+          <button id="btn-mute" class="ib" aria-label="Mute"></button>
+          <span id="time" class="time">0:00 / 1:00</span>
+          <span id="shot" class="shotname"></span>
+          <span class="grow"></span>
+          <button id="btn-cc" class="ib cc on" aria-label="Captions">CC</button>
+          <select id="quality" aria-label="Quality">
+            <option value="auto">Auto</option>
+            <option value="high">High</option>
+            <option value="low">Low</option>
+          </select>
+          <span id="fps" class="fps"></span>
+          <button id="btn-fs" class="ib" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M5 5h5v2H7v3H5zm9 0h5v5h-2V7h-3zM5 14h2v3h3v2H5zm12 3v-3h2v5h-5v-2z"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story">
+    <h2>Eight shots, sixty seconds</h2>
+    <p class="sub">Tap a shot to jump straight to it.</p>
+    <ol class="shots">
+      <li><button data-seek="0"><span class="t">0:00</span><b>The Bamboo Mountains</b><span>The camera cranes down through misty peaks to a red temple at golden hour.</span></button></li>
+      <li><button data-seek="6"><span class="t">0:06</span><b>The Momo Stall</b><span>Momo the panda sells steaming dumplings at the temple gate.</span></button></li>
+      <li><button data-seek="13"><span class="t">0:13</span><b>Master Bael</b><span>The great ox master splits a board in two. Momo watches from a bush.</span></button></li>
+      <li><button data-seek="20"><span class="t">0:20</span><b>The Flying Kick</b><span>“How hard can it be?” Momo leaps, slips and rolls into his own basket.</span></button></li>
+      <li><button data-seek="28"><span class="t">0:28</span><b>Six Flying Momos</b><span>Time slows. Six dumplings sail through the air.</span></button></li>
+      <li><button data-seek="35"><span class="t">0:35</span><b>The Catch</b><span>A perfect spin: a tower of momos on his head and one in his mouth.</span></button></li>
+      <li><button data-seek="44"><span class="t">0:44</span><b>Your Kung Fu</b><span>Master Bael: “Your kung fu… is in your hunger.”</span></button></li>
+      <li><button data-seek="52"><span class="t">0:52</span><b>Momo’s Kung Fu</b><span>Training begins, the title lands and the gong rings.</span></button></li>
+    </ol>
+  </section>
+
+  <section class="how">
+    <h2>How it was made</h2>
+    <div class="cards">
+      <div><b>Modelled and animated in code</b><p>Every character, prop, temple and bamboo stalk is generated by a Blender Python script. No hand-modelling, no motion capture.</p></div>
+      <div><b>Rendered live with Three.js</b><p>The scene ships as a compact glTF model plus baked keyframes. Your browser poses all 124 moving parts and cuts between eight cameras 24 times a second.</p></div>
+      <div><b>Voices, music and sound</b><p>Narration and character lines use neural text-to-speech. The score and sound effects are synthesised in Python, then mixed to −14 LUFS.</p></div>
+      <div><b>No video generators</b><p>No AI video model touched this film. It is code, geometry and light, end to end.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Momo’s Kung Fu · by <a href="https://github.com/abhi478jeetur-rgb">Abhijeet Kumar</a> · Built with Blender Python and <a href="https://threejs.org/">Three.js</a></p>
+  <p class="small">Best in a desktop browser with WebGL 2. If it stutters, set quality to Low.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
