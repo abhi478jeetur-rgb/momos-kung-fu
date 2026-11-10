@@ -1,0 +1,288 @@
+{
+ "fps": 24,
+ "frames": 1440,
+ "objects": [
+  "Board left",
+  "Board right",
+  "Steam 00",
+  "Steam 01",
+  "Steam 02",
+  "Steam 10",
+  "Steam 11",
+  "Steam 12",
+  "Momo",
+  "Momo body",
+  "Momo belly",
+  "Momo shoulders",
+  "Momo apron",
+  "Momo belt",
+  "Momo hip L",
+  "Momo leg L",
+  "Momo foot L",
+  "Momo hip R",
+  "Momo leg R",
+  "Momo foot R",
+  "Momo shoulder L",
+  "Momo arm L",
+  "Momo hand L",
+  "Momo paw L",
+  "Momo shoulder R",
+  "Momo arm R",
+  "Momo hand R",
+  "Momo paw R",
+  "Momo head pivot",
+  "Momo head",
+  "Momo cheek L",
+  "Momo cheek R",
+  "Momo ear L",
+  "Momo eye patch L",
+  "Momo eye L",
+  "Momo pupil L",
+  "Momo sparkle L",
+  "Momo ear R",
+  "Momo eye patch R",
+  "Momo eye R",
+  "Momo pupil R",
+  "Momo sparkle R",
+  "Momo nose",
+  "Momo mouth",
+  "Momo headband",
+  "Momo band tail -1",
+  "Momo band tail 1",
+  "Momo chopsticks",
+  "Chopstick -0.025",
+  "Chopstick 0.025",
+  "Bael",
+  "Bael body",
+  "Bael robe",
+  "Bael robe hem",
+  "Bael sash",
+  "Bael chest",
+  "Bael collar",
+  "Bael shoulder L",
+  "Bael sleeve L",
+  "Bael hand L",
+  "Bael fist L",
+  "Bael shoulder R",
+  "Bael sleeve R",
+  "Bael hand R",
+  "Bael fist R",
+  "Bael head pivot",
+  "Bael head",
+  "Bael snout",
+  "Bael nostril -1",
+  "Bael horn -1",
+  "Bael ear -1",
+  "Bael eye -1",
+  "Bael pupil -1",
+  "Bael sparkle -1",
+  "Bael brow -1",
+  "Bael nostril 1",
+  "Bael horn 1",
+  "Bael ear 1",
+  "Bael eye 1",
+  "Bael pupil 1",
+  "Bael sparkle 1",
+  "Bael brow 1",
+  "Bael beard",
+  "Bael mouth",
+  "Bael nose ring",
+  "Basket",
+  "Basket body",
+  "Basket rim",
+  "Basket handle",
+  "Dumpling 0",
+  "Dumpling 0 body",
+  "Dumpling 0 pleat",
+  "Dumpling 1",
+  "Dumpling 1 body",
+  "Dumpling 1 pleat",
+  "Dumpling 2",
+  "Dumpling 2 body",
+  "Dumpling 2 pleat",
+  "Dumpling 3",
+  "Dumpling 3 body",
+  "Dumpling 3 pleat",
+  "Dumpling 4",
+  "Dumpling 4 body",
+  "Dumpling 4 pleat",
+  "Dumpling 5",
+  "Dumpling 5 body",
+  "Dumpling 5 pleat",
+  "Shot 1 camera",
+  "Shot 1 camera target",
+  "Shot 2 camera",
+  "Shot 2 camera target",
+  "Shot 3 camera",
+  "Shot 3 camera target",
+  "Shot 4 camera",
+  "Shot 4 camera target",
+  "Shot 5 camera",
+  "Shot 5 camera target",
+  "Shot 6 camera",
+  "Shot 6 camera target",
+  "Shot 7 camera",
+  "Shot 7 camera target",
+  "Shot 8 camera",
+  "Shot 8 camera target",
+  "Title"
+ ],
+ "shots": [
+  {
+   "start": 0,
+   "camera": "Shot 1 camera"
+  },
+  {
+   "start": 144,
+   "camera": "Shot 2 camera"
+  },
+  {
+   "start": 312,
+   "camera": "Shot 3 camera"
+  },
+  {
+   "start": 480,
+   "camera": "Shot 4 camera"
+  },
+  {
+   "start": 672,
+   "camera": "Shot 5 camera"
+  },
+  {
+   "start": 840,
+   "camera": "Shot 6 camera"
+  },
+  {
+   "start": 1056,
+   "camera": "Shot 7 camera"
+  },
+  {
+   "start": 1248,
+   "camera": "Shot 8 camera"
+  }
+ ],
+ "cameras": {
+  "Shot 1 camera": {
+   "vfov": 65.4704525442152,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 2 camera": {
+   "vfov": 48.45549063590834,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 3 camera": {
+   "vfov": 73.73979529168804,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 4 camera": {
+   "vfov": 61.92751306414704,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 5 camera": {
+   "vfov": 73.73979529168804,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 6 camera": {
+   "vfov": 58.71550708558255,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 7 camera": {
+   "vfov": 61.92751306414704,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  },
+  "Shot 8 camera": {
+   "vfov": 61.92751306414704,
+   "near": 0.10000000149011612,
+   "far": 600.0
+  }
+ },
+ "lights": [
+  {
+   "name": "Golden Sun",
+   "type": "SUN",
+   "color": [
+    1.0,
+    0.800000011920929,
+    0.6000000238418579
+   ],
+   "energy": 3.5999999046325684,
+   "pos": [
+    0.0,
+    30.0,
+    -0.0
+   ],
+   "dir": [
+    0.5435968041419983,
+    -0.46947160363197327,
+    -0.6957721710205078
+   ]
+  },
+  {
+   "name": "Sky Fill",
+   "type": "SUN",
+   "color": [
+    0.6000000238418579,
+    0.699999988079071,
+    1.0
+   ],
+   "energy": 0.6000000238418579,
+   "pos": [
+    0.0,
+    30.0,
+    -0.0
+   ],
+   "dir": [
+    -0.3830222487449646,
+    -0.6427876353263855,
+    0.663413941860199
+   ]
+  },
+  {
+   "name": "Point",
+   "type": "POINT",
+   "color": [
+    1.0,
+    0.44999998807907104,
+    0.15000000596046448
+   ],
+   "energy": 60.0,
+   "pos": [
+    -2.200000047683716,
+    3.200000047683716,
+    -17.399999618530273
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -0.0
+   ]
+  },
+  {
+   "name": "Point.001",
+   "type": "POINT",
+   "color": [
+    1.0,
+    0.44999998807907104,
+    0.15000000596046448
+   ],
+   "energy": 60.0,
+   "pos": [
+    2.200000047683716,
+    3.200000047683716,
+    -17.399999618530273
+   ],
+   "dir": [
+    0.0,
+    -1.0,
+    -0.0
+   ]
+  }
+ ]
+}
